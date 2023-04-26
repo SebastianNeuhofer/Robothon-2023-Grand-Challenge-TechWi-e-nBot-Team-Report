@@ -13,7 +13,7 @@ The setup consists of
 </ul>
 
 <h2>General Approach</h2>
-Our goal was to succeed in all of the tasks with perfection. Since our robot´s range was not big enough to solve the task from any given orientation of the taskboard, we decided to create tools (e.g. a gear-feather-mechanism to open the door) and an additional axis in order to rotate the whole taskboard in an orientation which is suitable for the task. Of course, the additional axis is controlled by the robot-control-system and does not need any human interaction.
+Our goal was to succeed in all of the tasks with perfection. Since our robot´s range was not big enough to solve the task from any given orientation of the taskboard, we decided to create tools (e.g. a gear-feather-mechanism to open the door) and an additional axis in order to rotate the whole taskboard in an orientation which is suitable for the task. Of course, the additional axis is controlled by the robot-control-system and does not need any human interaction. Obviously, there are several specific orientations of the taskboard in which the additional tools are redundant. However, like we already described, we wanted to fit to any given random orientation.
 
 <figure>
   <img src="https://user-images.githubusercontent.com/131485125/234349474-f773ca18-ef78-40f8-976f-d72834209baf.JPG" width="300" height="300">
@@ -48,6 +48,10 @@ We used the Cognex Vision framework in order to locate the taskboard and its ori
 </ul>
 
 Simply speaking, the cognex software generates an additional coordinate-system which refers to the origin of the calibration-coordinate system. In order to use the coordinate system of the taskboard, the object-frame is coppied from the camera target to coordinate-system which is available in ABB´s robot studio IDE
+
+
+
+
 
 insert image!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -89,11 +93,10 @@ To run the software solution, follow this sequence:
 </ul>
 
 <h2>Authors</h2>
-(in alphabetic order)
+(in alphabetical order)
 
 
 [Sebastian Neuhofer](https://www.linkedin.com/in/sebneuhofer/), [Christian Scheidl](https://www.linkedin.com/in/christian-scheidl-793658252/), [David Seyser](https://www.linkedin.com/in/david-seyser/), [Julian Smole](https://www.linkedin.com/in/julian-smole-9b7537121/)
 
- 
 
 
