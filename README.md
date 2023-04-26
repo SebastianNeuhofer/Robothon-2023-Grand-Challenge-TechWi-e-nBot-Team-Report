@@ -26,10 +26,12 @@ Our goal was to succeed in all of the tasks with perfection. Since our robot´s 
 Despite the presented tools, of course the gripping mechanism itself is the most important design part. In order to solve all requested task in a very sufficient way, we had to find a gripper-plate which is very different to all already known types on market. Our solution - especially to cope with the wire-winding task is to include pulleys into the plates. Those pulleys - in closed configuration - form a small gap for the wire in order to hold it tight, but still keep the requiered freedom of motion to wind the wire.
 
 
-
-<figure>
+<div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/131485125/234351693-f515091a-93aa-4f87-b97f-a567f6041716.jpg" width="400" height="300")>
-</figure>
+  <img src="https://user-images.githubusercontent.com/131485125/234648049-21f379e8-f861-4e4b-a01f-ac92bf939d04.JPG" width="300" height="300")>
+</div>
+
+
 
 
 
