@@ -63,12 +63,12 @@ Seperated from the localisation of the taskboard, there is another camera job to
 
 In order to detect the triangles, we used so called "blobs". Blobs are a collection of several pixels with a common brightness. Since the blue screen of the display has an other brightnes and amount of pixels than the triangles, it is possible to seperate them.
 
-Since orientation and position are already known by the system, the only important information is the distance between the triangles. Unfortunately, there are several edge cases to cope wiht:
+Since orientation and position are already known by the system, the only important information is the distance between the triangles. Unfortunately, there are several edge cases to cope with:
 
 | Case    | definition                                                                                                                   |     Image    | sequence                                                      |
 |---------|------------------------------------------------------------------------------------------------------------------------------|:------------:|---------------------------------------------------------------|
-| regular | camera can distinguish between both triangles and reed the distance beetween them correctly                                  | insert Image | robot moves slider to determined position                     |
-| overlap | triangles overlap. So the blob algorythm can´t find 2 seperate triangles, since they merged to  one big collection of pixels | ![TriangleDistanceMarked](https://user-images.githubusercontent.com/131485125/234574520-8d1e028a-296e-49c9-9d5b-1acc3d5d9e94.png) | robot moves slider 5mm from middle postion in both directions |
+| regular | camera can distinguish between both triangles and reed the distance beetween them correctly                                  | ![TriangleDistanceMarked](https://user-images.githubusercontent.com/131485125/234574520-8d1e028a-296e-49c9-9d5b-1acc3d5d9e94.png) | robot moves slider to determined position                     |
+| overlap | triangles overlap. So the blob algorythm can´t find 2 seperate triangles, since they merged to  one big collection of pixels | Insert Image | robot moves slider 5mm from middle postion in both directions |
 | done    | A rare case, in which the triangles overlap so tight, that the task is already done by simply moving to the middle triangle. | insert Image | none                                                          |
 
 
