@@ -49,8 +49,9 @@ We used the Cognex Vision framework in order to locate the taskboard and its ori
 
 Simply speaking, the cognex software generates an additional coordinate-system which refers to the origin of the calibration-coordinate system. In order to use the coordinate system of the taskboard, the object-frame is coppied from the camera target to coordinate-system which is available in ABB´s robot studio IDE
 
+insert image!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-insert pics!!!!!!!!!!
+
 
 <h3>Vision System: Slider adjustment</h3>
 Seperated from the localisation of the taskboard, there is another camera job to execute 
@@ -89,11 +90,10 @@ To run the software solution, follow this sequence:
 
 <h2>Authors</h2>
 (in alphabetic order)
-<ul>
-  <li>[Sebastian Neuhofer](https://www.linkedin.com/in/sebneuhofer/)</li>
-  <li>Christian Scheidl</li> 
-  <li>David Seyser</li>
-  <li>Julian Smole</li>
-</ul>
+
+
+[Sebastian Neuhofer](https://www.linkedin.com/in/sebneuhofer/), [Christian Scheidl](https://www.linkedin.com/in/christian-scheidl-793658252/), [David Seyser](https://www.linkedin.com/in/david-seyser/), [Julian Smole](https://www.linkedin.com/in/julian-smole-9b7537121/)
+
+ 
 
 
