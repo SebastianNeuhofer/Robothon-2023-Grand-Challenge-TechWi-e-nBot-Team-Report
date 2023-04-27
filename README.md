@@ -3,6 +3,7 @@
 <h2>Hardware Setup</h2>
 
 The setup consists of
+![Setup](https://user-images.githubusercontent.com/131485125/234953688-bdba439e-ceb5-40f2-8fe3-e05b4a331f83.png)
 
 <ul>
   <li>Base (Table consists of aluminum profiles)</li>
@@ -59,8 +60,10 @@ Simply speaking, the cognex software generates an additional coordinate-system w
 
 
 
+![PatternRecognitionTaskboard](https://user-images.githubusercontent.com/131485125/234950507-a29cda0c-0c72-4bd2-b987-41a73b3fd554.png)
+ 
+ The origin of the taskboard-coordinate system is set to the upper left corner (you can see the green symbol). All other positions reffer to this point and are "hardcoded"
 
-insert image!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 
