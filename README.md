@@ -9,6 +9,7 @@ The setup consists of
   <li>Base (Table consists of aluminum profiles)</li>
   <li>ABB CRB 1100 + OmnicorC30 control unit </li>
   <li>Schunk parallel gripper (MPC 075) with 3d printed plates</li>
+  <li>COGNEX 821-10160-1R camera</li>
   <li>turning-table as additional axis (self-crafted)</li>
   <li>additional tools in order to fullfill the tasks</li>
 </ul>
