@@ -67,7 +67,7 @@ insert image!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 <h3>Vision System: Slider adjustment</h3>
 Seperated from the localisation of the taskboard, there is another camera job to execute 
 <ul>
-<li>"Slider.job" ->result: distance beetween green and yellow triangle</li>
+<li>"SliderDisplay.job" ->result: distance beetween green and yellow triangle</li>
 </ul>
 
 
@@ -78,8 +78,8 @@ Since orientation and position are already known by the system, the only importa
 | Case    | definition                                                                                                                   |     Image    | sequence                                                      |
 |---------|------------------------------------------------------------------------------------------------------------------------------|:------------:|---------------------------------------------------------------|
 | regular | camera can distinguish between both triangles and reed the distance beetween them correctly                                  | ![TriangleDistanceMarked](https://user-images.githubusercontent.com/131485125/234574520-8d1e028a-296e-49c9-9d5b-1acc3d5d9e94.png) | robot moves slider to determined position                     |
-| overlap | triangles overlap. So the blob algorythm can´t find 2 seperate triangles, since they merged to  one big collection of pixels | Insert Image | robot moves slider 5mm from middle postion in both directions |
-| done    | A rare case, in which the triangles overlap so tight, that the task is already done by simply moving to the middle triangle. | insert Image | none                                                          |
+| overlap | triangles overlap. So the blob algorythm can´t find 2 seperate triangles, since they merged to  one big collection of pixels |![TriangleOverlap](https://user-images.githubusercontent.com/131485125/234843506-c9a3f061-fc72-403f-bd1b-bd166612e150.png)| robot moves slider 5mm from middle postion in both directions |
+| done    | A rare case, in which the triangles overlap so tight, that the task is already done by simply moving to the middle triangle. | ![TriangleGone](https://user-images.githubusercontent.com/131485125/234945193-eb437715-8e58-4710-8580-3896ff1e91fa.png)| should be none. To avoid errors due to false interpretation, we decided to start the same sequence like in "overlap".                                                           |
 
 
 <h2>Repository of software modules</h2>
