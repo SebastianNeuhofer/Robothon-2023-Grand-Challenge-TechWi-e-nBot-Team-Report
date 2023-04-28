@@ -1,5 +1,7 @@
 # Robothon-2023-Grand-Challenge-TechWi(e)nBot-Team-Report
 
+This page deals with the main-task (Taskboard). To see the report of the [BYOD](BYOD.md)-report, click here.
+
 <h2>Hardware Setup</h2>
 
 The setup consists of
@@ -15,7 +17,7 @@ The setup consists of
 </ul>
 
 <h2>General Approach</h2>
-Our goal was to succeed in all of the tasks with perfection. Since our robot´s range was not big enough to solve the task from any given orientation of the taskboard, we decided to create tools (e.g. a gear-feather-mechanism to open the door) and an additional axis in order to rotate the whole taskboard in an orientation which is suitable for the task. Of course, the additional axis is controlled by the robot-control-system and does not need any human interaction. Obviously, there are several specific orientations of the taskboard in which the additional tools are redundant. However, like we already described, we wanted to fit to any given random orientation.
+Our goal was to successfully complete all of the tasks with perfection. However, our robot's range was not sufficient to solve the task from any given orientation of the taskboard. To overcome this limitation, we decided to create tools, such as a gear-feather mechanism to open the door, and an additional axis to rotate the whole taskboard to a suitable orientation. The additional axis is controlled by the robot control system and does not require any human interaction. While there are specific orientations of the taskboard in which the additional tools are not necessary, we wanted to ensure that our robot could adapt to any random orientation of the taskboard.
 
 <div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/131485125/234349474-f773ca18-ef78-40f8-976f-d72834209baf.JPG" width="300" height="300"flex: 1;">
@@ -24,7 +26,7 @@ Our goal was to succeed in all of the tasks with perfection. Since our robot´s 
 </div>
 
 
-Despite the presented tools, of course the gripping mechanism itself is the most important design part. In order to solve all requested task in a very sufficient way, we had to find a gripper-plate which is very different to all already known types on market. Our solution - especially to cope with the wire-winding task is to include pulleys into the plates. Those pulleys - in closed configuration - form a small gap for the wire in order to hold it tight, but still keep the requiered freedom of motion to wind the wire.
+Despite the tools we presented, the gripping mechanism itself was the most crucial part of our design. To perform all of the requested tasks efficiently, we needed to create a gripper plate that was significantly different from any existing types on the market. Our solution, especially for the wire-winding task, was to incorporate pulleys into the plates. These pulleys, when in a closed configuration, created a small gap for the wire, allowing it to be held tightly while still maintaining the necessary freedom of motion to wind the wire.
 
 
 <div style="display: flex;">
@@ -41,11 +43,11 @@ Despite the presented tools, of course the gripping mechanism itself is the most
 
 <h3>Methods</h3>
 
-Our approach was to split all the sub-Tasks into seperate "methods", in order to be independent to any given sequence. Of course, there is an init-Sequence which was given by the task.
+Our approach was to split all of the sub-tasks into separate methods to make them independent of any given sequence. However, there is an initialization sequence that was provided by the task.
 
 ![flowchart](https://user-images.githubusercontent.com/131485125/234347707-d8d07b28-8fe2-4b5c-8b70-358c335a7c51.png)
 
-In the flowchart above, you can see 3 times the process "camera action". This means, that a specific camera job is loaded to the camera, executed and the results are received. More about the camera (vision) jobs in the next paragraphs.
+In the flowchart above, you can see that the process 'camera action' is repeated three times. This indicates that a specific camera job is loaded onto the camera, executed, and the results are received. More information about the camera (vision) jobs will be provided in the next paragraphs.
 
 <h3>Vision System: Board localisation</h3>
 We used the Cognex Vision framework in order to locate the taskboard and its orientation. In detail, we generated several different "jobs", which got called by ABB's rapid-code.
@@ -56,14 +58,16 @@ We used the Cognex Vision framework in order to locate the taskboard and its ori
   <li>"BYOD.job" ->result: position and orientation of the BYOD</li>
 </ul>
 
-Simply speaking, the cognex software generates an additional coordinate-system which refers to the origin of the calibration-coordinate system. In order to use the coordinate system of the taskboard, the object-frame is coppied from the camera target to coordinate-system which is available in ABB´s robot studio IDE
+
+
+In simple terms, the Cognex software generates an additional coordinate system that refers to the origin of the calibration coordinate system. To use the coordinate system of the taskboard, the object frame is copied from the camera target to a coordinate system that is available in ABB's RobotStudio IDE.
 
 
 
 
 ![PatternRecognitionTaskboard](https://user-images.githubusercontent.com/131485125/234950507-a29cda0c-0c72-4bd2-b987-41a73b3fd554.png)
  
- The origin of the taskboard-coordinate system is set to the upper left corner (you can see the green symbol). All other positions reffer to this point and are "hardcoded"
+ The origin of the taskboard coordinate system is set to the upper left corner (indicated by the green symbol), and all other positions are "hardcoded" with respect to this point.
 
 
 
@@ -75,9 +79,9 @@ Seperated from the localisation of the taskboard, there is another camera job to
 </ul>
 
 
-In order to detect the triangles, we used so called "blobs". Blobs are a collection of several pixels with a common brightness. Since the blue screen of the display has an other brightnes and amount of pixels than the triangles, it is possible to seperate them.
+In order to detect the triangles, we used what are called 'blobs.' Blobs are a collection of several pixels with a common brightness. Since the blue screen of the display has a different brightness and number of pixels than the triangles, it is possible to separate them.
 
-Since orientation and position are already known by the system, the only important information is the distance between the triangles. Unfortunately, there are several edge cases to cope with:
+Since the orientation and position are already known by the system, the only important information is the distance between the triangles. Unfortunately, there are several edge cases that need to be considered:
 
 | Case    | definition                                                                                                                   |     Image    | sequence                                                      |
 |---------|------------------------------------------------------------------------------------------------------------------------------|:------------:|---------------------------------------------------------------|
@@ -100,7 +104,7 @@ To run the software solution, follow this sequence:
 <ul>
   <li>Install ABB Robot Studio or run directly from FlexPendant via USB</li>
   <li>Import SoftwareSolutionRobot</li> 
-  <li>Connect the cammera to the controller via Profinet</li>
+  <li>Connect the camera to the controller via Profinet</li>
   <li>Store all .job files on the camera</li>
   <li>calibrate the camera via cognex grid</li>
   <li>run the solution via ABBs IDE</li>
