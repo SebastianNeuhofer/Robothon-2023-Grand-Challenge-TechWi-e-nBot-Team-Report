@@ -102,12 +102,17 @@ The created software solution is based on third parties software:
 <h2>How to run</h2>How to run
 To run the software solution, follow this sequence:
 <ul>
+  <li>Print all .step files with a 3d printer (slice to gcode)</li>
+  <li>Mount gripper</li>
   <li>Install ABB Robot Studio or run directly from FlexPendant via USB</li>
   <li>Import SoftwareSolutionRobot</li> 
   <li>Connect the camera to the controller via Profinet</li>
+  <li>Select camera IP adress in the IDE</li>
   <li>Store all .job files on the camera</li>
+  <li>change light level to fit to the environment</li>
   <li>calibrate the camera via cognex grid</li>
-  <li>run the solution via ABBs IDE</li>
+  <li>run the solution via ABBs IDE in hand-operation-mode and check if all trajectories are suitable</li>
+  <li>change robots settings to automatic mode in order to operate with full speed</li>
 </ul>
 
 <h2>Authors</h2>
