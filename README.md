@@ -12,12 +12,12 @@ The setup consists of
   <li>ABB CRB 1100 + OmnicorC30 control unit </li>
   <li>Schunk parallel gripper (MPC 075) with 3d printed plates</li>
   <li>COGNEX 821-10160-1R camera</li>
-  <li>turning-table as additional axis (self-crafted)</li>
+  <li>(optional) turning-table as additional axis (self-crafted)</li>
   <li>additional tools in order to fullfill the tasks</li>
 </ul>
 
 <h2>General Approach</h2>
-Our goal was to successfully complete all of the tasks with perfection. However, our robot's range was not sufficient to solve the task from any given orientation of the taskboard. To overcome this limitation, we decided to create tools, such as a gear-feather mechanism to open the door, and an additional axis to rotate the whole taskboard to a suitable orientation. The additional axis is controlled by the robot control system and does not require any human interaction. While there are specific orientations of the taskboard in which the additional tools are not necessary, we wanted to ensure that our robot could adapt to any random orientation of the taskboard.
+Our goal was to successfully complete all of the tasks with perfection. However, our robot's range was not sufficient to solve the task from any given orientation of the taskboard. To overcome this limitation, we decided to create tools, such as a gear-feather mechanism to open the door, and an additional axis to rotate the whole taskboard to a suitable orientation. The additional axis is controlled by the robot control system and does not require any human interaction. While there are specific orientations of the taskboard in which the additional tools are not necessary, we wanted to ensure that our robot could adapt to any random orientation of the taskboard. However, at the time of submission the integration of the turningtable to the robot system does not work with a sufficient reliability. Thus, we did not use it in our final submission video. Nevertheless we made a great effort in the developing process, which is why we still want to present it in our report.
 
 <div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/131485125/234349474-f773ca18-ef78-40f8-976f-d72834209baf.JPG" width="300" height="300"flex: 1;">
@@ -50,7 +50,8 @@ Our approach was to split all of the sub-tasks into separate methods to make the
 In the flowchart above, you can see that the process 'camera action' is repeated three times. This indicates that a specific camera job is loaded onto the camera, executed, and the results are received. More information about the camera (vision) jobs will be provided in the next paragraphs.
 
 <h3>Vision System: Board localisation</h3>
-We used the Cognex Vision framework in order to locate the taskboard and its orientation. In detail, we generated several different "jobs", which got called by ABB's rapid-code.
+We used the Cognex Vision framework in order to locate the taskboard and its orientation. In detail, we generated several different "jobs", which got called by ABB's rapid-code. Specifically, we used the Cognex PatMax RedLine Pattern algorithm.
+
 
 <ul>
   <li>"newTaskboard.job" -> result: position and orientation of the taskboard</li>
