@@ -181,6 +181,9 @@ To run the software solution, follow this sequence:
   <li>Connect the camera to the controller via Profinet</li>
   <li>Select camera IP adress in the IDE</li>
   <li>Store all .job files on the camera</li>
+  
+  [camJobs](./camJobs.zip)
+  
   <li>change light level to fit to the environment</li>
   <li>calibrate the camera via cognex grid</li>
   <li>calibrate robots workobject coordinate system to the grid</li>
