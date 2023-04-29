@@ -5,7 +5,11 @@ This page deals with the main-task (Taskboard). To see the report of the [BYOD](
 <h2>Hardware Setup</h2>
 
 The setup consists of
-![Setup](https://user-images.githubusercontent.com/131485125/234953688-bdba439e-ceb5-40f2-8fe3-e05b4a331f83.png)
+
+<div style="display: flex;">
+  <img src="https://user-images.githubusercontent.com/131485125/234953688-bdba439e-ceb5-40f2-8fe3-e05b4a331f83.png" width="450" height="500")>
+</div>
+
 
 <ul>
   <li>Base (Table consists of aluminum profiles)</li>
@@ -17,7 +21,11 @@ The setup consists of
 </ul>
 
 <h2>General Approach</h2>
-Our goal was to successfully complete all of the tasks with perfection. However, our robot's range was not sufficient to solve the task from any given orientation of the taskboard. To overcome this limitation, we decided to create tools, such as a gear-feather mechanism to open the door, and an additional axis to rotate the whole taskboard to a suitable orientation. The additional axis is controlled by the robot control system and does not require any human interaction. While there are specific orientations of the taskboard in which the additional tools are not necessary, we wanted to ensure that our robot could adapt to any random orientation of the taskboard. However, at the time of submission the integration of the turningtable to the robot system does not work with a sufficient reliability. Thus, we did not use it in our final submission video. Nevertheless we made a great effort in the developing process, which is why we still want to present it in our report.
+Our goal was to successfully complete all of the tasks with perfection. However, our robot's range is not sufficient to solve the task from any given orientation of the taskboard without constraints. 
+
+[constraints](README.md#constraints-due-to-setup), or see below
+
+To overcome this limitation, we decided to create tools, such as a gear-feather mechanism to open the door, and an additional axis to rotate the whole taskboard to a suitable orientation. The additional axis is controlled by the robot control system and does not require any human interaction. While there are specific orientations of the taskboard in which the additional tools are not necessary, we wanted to ensure that our robot could adapt to any random orientation of the taskboard. However, at the time of submission the integration of the turningtable to the robot system does not work with a sufficient reliability. Thus, we did not use it in our final submission video. Nevertheless we made a great effort in the developing process, which is why we still want to present it in our report.
 
 <div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/131485125/234349474-f773ca18-ef78-40f8-976f-d72834209baf.JPG" width="300" height="300"flex: 1;">
