@@ -92,6 +92,7 @@ In order to detect the triangles, we used what are called 'blobs.' Blobs are a c
 
 Since the orientation and position are already known by the system, the only important information is the distance between the triangles. Unfortunately, there are several edge cases that need to be considered:
 
+
 | Case    | definition                                                                                                                   |     Image    | sequence                                                      |
 |---------|------------------------------------------------------------------------------------------------------------------------------|:------------:|---------------------------------------------------------------|
 | regular | camera can distinguish between both triangles and reed the distance beetween them correctly                                  | ![TriangleDistanceMarked](https://user-images.githubusercontent.com/131485125/234574520-8d1e028a-296e-49c9-9d5b-1acc3d5d9e94.png) | robot moves slider to determined position                     |
