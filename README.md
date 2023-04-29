@@ -41,6 +41,12 @@ Despite the tools we presented, the gripping mechanism itself was the most cruci
   <img src="https://user-images.githubusercontent.com/131485125/234351693-f515091a-93aa-4f87-b97f-a567f6041716.jpg" width="400" height="300")>
   <img src="https://user-images.githubusercontent.com/131485125/234648049-21f379e8-f861-4e4b-a01f-ac92bf939d04.JPG" width="300" height="300")>
 </div>
+                                                                                                                                            
+
+<u> Why do we use such a complex construction for the wire-gripper part?:</u>
+                                                                                                                                            
+  The reason why we decided to use pulleys is that from our point of view it is the method which damages the wire least. Other options - like simply grabbing it or using a bigger gap which allows some motion - would still evoke very high friction and would destroy the wire over time. With our solution, friction is neglectable and as a matter of fact the service life of the wires increases.                                                                                                                                          
+                                                                                                                                            
 
 
 
