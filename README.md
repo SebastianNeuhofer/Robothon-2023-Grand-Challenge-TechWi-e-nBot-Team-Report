@@ -106,14 +106,6 @@ Since the orientation and position are already known by the system, the only imp
 | done    | A rare case, in which the triangles overlap so tight, that the task is already done by simply moving to the middle triangle. | ![TriangleGone](https://user-images.githubusercontent.com/131485125/234945193-eb437715-8e58-4710-8580-3896ff1e91fa.png)| should be none. To avoid errors due to false interpretation, we decided to start the same sequence like in "overlap".                                                           |
 
 
-<h2>Repository of software modules</h2>
-The created software solution is based on third parties software:
-
-<ul>
-  <li>ABB robot studio IDE, usage of software package Rapid</li>
-  <li>Cognex Vision framework </li> 
-  <li>Arduino IDE + stepper.h library (stepper motor for turning table)</li>
-</ul>
 
 <h2>Constraints due to Setup</h2>
 Since we use only one robot to solve the task (asumption that turning table is not implemented to the solution yet), there are some constraints which have to be considered while placing the taskboard to a specific position/orientation 
@@ -159,11 +151,20 @@ If we fall below the bottom limit (left image), the wire will be too short and w
   <img src="https://user-images.githubusercontent.com/131485125/235301030-cbb0a773-c326-4454-a24d-6f992da2bf5b.png" width="350" height="180")>
 </div>
 
+<h2>New insights</h2>
+In general, participation in the robothon challenge was a great pleasure - although it was extremly time-consuming. To give a short conclusion, we want to list our most important new insights in the developing-process of new robotic-solutions:
 
 
-
-
-
+<ul>
+  <li>if the task seems to be impossible: be creative and create a tool to solve it</li>
+  <li>first things first: Set up the working station perfectly at the beginning, not in the end. (we had to learn it the hard way) </li>
+   <li>mount camera seperatly from the robot. If robot moves fast, the camera wiggles a bit</li>
+  <li>wires are hard to control and there behaviour is nearly unpredictable</li> 
+  <li>wire´s behaviour change tremendously after changing the velocity of the robot</li>
+  <li>clean up your working station before using the robot -> it will definitely reduce damages</li>
+  <li>treat any suggestion for a solution instead of ruling it out instantly </li>
+ 
+</ul>
 
 
 <h2>How to run</h2>
@@ -184,20 +185,15 @@ To run the software solution, follow this sequence:
   <li>change robots settings to automatic mode in order to operate with full speed</li>
 </ul>
 
-<h2>New insights</h2>
-In general, participation in the robothon challenge was a great pleasure - although it was extremly time-consuming. To give a short conclusion, we want to list our most important new insights in the developing-process of new robotic-solutions:
-
+<h2>Repository of software modules</h2>
+The created software solution is based on third parties software:
 
 <ul>
-  <li>if the task seems to be impossible: be creative and create a tool to solve it</li>
-  <li>first things first: Set up the working station perfectly at the beginning, not in the end. (we had to learn it the hard way) </li>
-   <li>mount camera seperatly from the robot. If robot moves fast, the camera wiggles a bit</li>
-  <li>wires are hard to control and there behaviour is nearly unpredictable</li> 
-  <li>wire´s behaviour change tremendously after changing the velocity of the robot</li>
-  <li>clean up your working station before using the robot -> it will definitely reduce damages</li>
-  <li>treat any suggestion for a solution instead of ruling it out instantly </li>
- 
+  <li>ABB robot studio IDE, usage of software package Rapid</li>
+  <li>Cognex Vision framework </li> 
+  <li>Arduino IDE + stepper.h library (stepper motor for turning table)</li>
 </ul>
+
 
 
 
