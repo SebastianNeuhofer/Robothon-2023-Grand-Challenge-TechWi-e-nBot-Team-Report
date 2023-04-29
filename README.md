@@ -174,7 +174,10 @@ To run the software solution, follow this sequence:
   <li>Print all .step files with a 3d printer (slice to gcode)</li>
   <li>Mount gripper</li>
   <li>Install ABB Robot Studio or run directly from FlexPendant via USB</li>
-  <li>Import SoftwareSolutionRobot</li> 
+  <li>Import  </li>  
+  
+  [SoftwareSolutionRobot](./SoftwareSolutionRobot.zip)
+  
   <li>Connect the camera to the controller via Profinet</li>
   <li>Select camera IP adress in the IDE</li>
   <li>Store all .job files on the camera</li>
