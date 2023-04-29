@@ -138,7 +138,7 @@ Due to the fact that we only use one robot, the combination of the winding task 
 
 <div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/131485125/235300522-30daf56c-9985-4c78-ad17-7fd9d1f6a211.png" width="300" height="180")>
-  <img src="https://user-images.githubusercontent.com/131485125/235300528-18988e84-845f-46c3-8d0a-768273d26c82.png" width="300" height="180")>
+  <img src="https://user-images.githubusercontent.com/131485125/235302042-2fe8b154-f8a5-42e7-9763-b3a0ff893d73.png" width="300" height="180")>
 </div>
 
 
