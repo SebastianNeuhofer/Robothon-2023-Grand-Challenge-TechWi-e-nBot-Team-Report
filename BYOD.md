@@ -1,3 +1,4 @@
+This page deals with the BYOD-Task. To see the report of the [Taskboard](README.md)-report, click here.
 # BYOD: verification of a voltage supply unit
 
 The selected device for the BYOD task is an old voltage supply unit that has been used in a laboratory. Since these devices require regular verification, an automated solution would decrease the workload for workers in the lab and enhance the service life of the devices by reducing unnecessary exchanges.
@@ -6,6 +7,8 @@ The selected device for the BYOD task is an old voltage supply unit that has bee
 There are many targets which have to be used in order to fullfill the task. The most important targets are highlighted in the following image
 
 ![SetupBYOD](https://user-images.githubusercontent.com/131485125/235075878-e2d5c995-f002-4cae-9e4e-9c7058512399.png)
+
+We used the same gripper like in the main-task.
 
 <h2>Software solution</h2>
 
