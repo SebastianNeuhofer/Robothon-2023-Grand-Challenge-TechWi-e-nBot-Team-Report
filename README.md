@@ -121,7 +121,7 @@ First of all, the area of positionining is contrainted by the field which is cov
 
 
 <h3>Range of robot</h3>
-Second topic to consider is the range of motion of the ABB CRB 1100. In general the range of the TCP0 (center of flange) is about 74cm. In addition, to solve the given tasks, the range of "free positioning decreases. In particular, the taskboard must be placed in an orientation, so that the "wind wire" area faces the robot´s base. With our tools and configuration, it is not possible to rotate the taskboard so that the winding area is orientated away from the base.
+Second topic to consider is the range of motion of the ABB CRB 1100. In general the range of the TCP0 (center of flange) is about 74cm. In addition, to solve the given tasks, the range of "free positioning" decreases. In particular, the taskboard must be placed in an orientation, so that the "wind wire" area faces the robot´s base. With our tools and configuration, it is not possible to rotate the taskboard so that the winding area is orientated away from the base.
 
 
 <div style="display: flex;">
