@@ -135,12 +135,15 @@ Due to the fact that we only use one robot, the combination of the winding task 
 
 
 
-If we exceed the the angle in positiv direction, the winding task won`t work due to the limited range of motion of the robot. If we fall below the bottom limit, the wire will be too short and would tear the probe from the temporarily clamp
+If we fall below the bottom limit (left image), the wire will be too short and would tear the probe from the temporarily clamp. If we exceed the the angle in positiv direction (right image), the winding task won`t work due to the limited range of motion of the robot.
 
 <div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/131485125/235300593-be556ba0-e33a-40fe-b122-9ca1f2bf7369.png" width="300" height="180")>
-  <img src="https://user-images.githubusercontent.com/131485125/235300528-18988e84-845f-46c3-8d0a-768273d26c82.png" width="300" height="180")>
+  <img src="https://user-images.githubusercontent.com/131485125/235301030-cbb0a773-c326-4454-a24d-6f992da2bf5b.png" width="350" height="180")>
 </div>
+
+
+
 
 
 
