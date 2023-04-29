@@ -158,7 +158,8 @@ If we fall below the bottom limit (left image), the wire will be too short and w
 
 
 
-<h2>How to run</h2>How to run
+<h2>How to run</h2>
+
 To run the software solution, follow this sequence:
 <ul>
   <li>Print all .step files with a 3d printer (slice to gcode)</li>
