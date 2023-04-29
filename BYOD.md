@@ -16,7 +16,8 @@ We used the same gripper like in the main-task.
 <h3>Methods</h3>
 Our approach was to split all the sub-Tasks into seperate "methods", in order to be independent to any given sequence. Of course, there is an init-Sequence which has a "logical" order. You can see the methods in the following flowchart diagram.
 
-![image](https://user-images.githubusercontent.com/131485125/235076912-af4cfbf6-cb72-4c1f-9a8e-bc3d1cda2b36.png)
+![FlowchartBYOD_V2](https://user-images.githubusercontent.com/131485125/235315715-ccb48426-f2be-454d-a57b-fcd384422d6b.png)
+
 
 <h3>Vision System</h3>
 Similar to the main task, the position and orientation of the device must be determained. Therefore wie applied a similar alogrythm to detect all information needed.
