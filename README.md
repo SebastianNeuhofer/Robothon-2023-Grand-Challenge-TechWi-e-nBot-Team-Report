@@ -180,7 +180,7 @@ To run the software solution, follow this sequence:
   <li>Store all .job files on the camera</li>
   <li>change light level to fit to the environment</li>
   <li>calibrate the camera via cognex grid</li>
-  <li>calibrat robots worcobject coordinate system to the grid</li>
+  <li>calibrate robots workobject coordinate system to the grid</li>
   <li>run the solution via ABBs IDE in hand-operation-mode and check if all trajectories are suitable</li>
   <li>change robots settings to automatic mode in order to operate with full speed</li>
 </ul>
