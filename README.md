@@ -87,7 +87,7 @@ Since the orientation and position are already known by the system, the only imp
 | Case    | definition                                                                                                                   |     Image    | sequence                                                      |
 |---------|------------------------------------------------------------------------------------------------------------------------------|:------------:|---------------------------------------------------------------|
 | regular | camera can distinguish between both triangles and reed the distance beetween them correctly                                  | ![TriangleDistanceMarked](https://user-images.githubusercontent.com/131485125/234574520-8d1e028a-296e-49c9-9d5b-1acc3d5d9e94.png) | robot moves slider to determined position                     |
-| overlap | triangles overlap. So the blob algorythm can´t find 2 seperate triangles, since they merged to  one big collection of pixels |![TriangleOverlap](https://user-images.githubusercontent.com/131485125/234843506-c9a3f061-fc72-403f-bd1b-bd166612e150.png)| robot moves slider 5mm from middle postion in both directions |
+| overlap | triangles overlap. So the blob algorythm can´t find 2 seperate triangles, since they merged to  one big collection of pixels |![TriangleOverlap](https://user-images.githubusercontent.com/131485125/234843506-c9a3f061-fc72-403f-bd1b-bd166612e150.png)| robot moves slider 5mm from middle postion in both directions. This sequence is indicated by a short blue blink of the robot´s built-in lamp |
 | done    | A rare case, in which the triangles overlap so tight, that the task is already done by simply moving to the middle triangle. | ![TriangleGone](https://user-images.githubusercontent.com/131485125/234945193-eb437715-8e58-4710-8580-3896ff1e91fa.png)| should be none. To avoid errors due to false interpretation, we decided to start the same sequence like in "overlap".                                                           |
 
 
@@ -112,6 +112,7 @@ To run the software solution, follow this sequence:
   <li>Store all .job files on the camera</li>
   <li>change light level to fit to the environment</li>
   <li>calibrate the camera via cognex grid</li>
+  <li>calibrat robots worcobject coordinate system to the grid</li>
   <li>run the solution via ABBs IDE in hand-operation-mode and check if all trajectories are suitable</li>
   <li>change robots settings to automatic mode in order to operate with full speed</li>
 </ul>
