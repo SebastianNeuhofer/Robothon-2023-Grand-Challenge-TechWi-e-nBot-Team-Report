@@ -29,6 +29,6 @@ The origin of the new target coordinate system is set to the bottom left corner 
 
 <h2>Difficulties</h2>
 
-Since we wanted to utilize as many wire interactions as possible, we created a task that presented some difficulties during operation. One of the biggest challenges was the usage of two different wires. While executing the task, we had to ensure that both wires did not interfere with each other and impede their performance. We developed a well-prepared code sequence to solve this issue, which has been successful in practice.
+Since we wanted to utilize as many wire interactions as possible, we created a task that presented some difficulties during operation. One of the biggest challenges was the usage of two different wires. While executing the task, we had to ensure that both wires did not interfere with each other and impede their performance. We developed a well-prepared code sequence to solve this issue, which has been successful in practice. In an iterative process, we developed strategies to cope with the unpredictable behaviour of the wires as well as possible.
 
 
