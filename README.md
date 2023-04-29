@@ -111,7 +111,7 @@ Since the orientation and position are already known by the system, the only imp
 Since we use only one robot to solve the task (asumption that turning table is not implemented to the solution yet), there are some constraints which have to be considered while placing the taskboard to a specific position/orientation 
 
 <h3>camera frame</h3>
-First of all, the area of positionining is contrainted by the field which is covered by the camera. Due to the chosen height of the camera and its technical properties, we are able to locate the taskboard in a area which looks like this:
+First of all, the area of positionining is constrainted by the field which is covered by the camera. Due to the chosen height of the camera and its technical properties, we are able to locate the taskboard in a area which looks like this:
 
 <div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/131485125/235298559-5d8cb600-b69f-45ec-a1b2-6e238f7cf07d.png" width="500" height="300")>
@@ -134,7 +134,7 @@ Another aspect to consider is that the taskboard must maintain a minimum distanc
 
 
 <h3>placing probe in temporarily clamp</h3>
-Due to the fact that we only use one robot, the combination of the winding task and the probe itself cause another constraint. After pluging the probe into the regular clamp, we can not plug it back to the white socket because it would interfere with the winding task. So we have to plug it to an temporarily clamp which allows us to taking it back from a determained position after the winding task. Since we must wind the wire 2 times to guarantee an "always-working solution", the rest of the wire becomes very short. That is the reason why we were forced to reduce the accepted orientation-angle to about -10° (left image) to 45° (right image). 
+Due to the fact that we only use one robot, the combination of the winding task and the probe itself cause another constraint. After pluging the probe into the regular clamp, we can not plug it back to the white socket because it would interfere with the winding task. So we have to plug it to an temporarily clamp which allows us to taking it back from a determained position after the winding task. Since we must wind the wire 2 times to guarantee an "always-working solution", the rest of the wire becomes very short. That is the reason why we were forced to reduce the accepted orientation-angle to about -10° (left image) to 45° (right image). To clarify: orienting the long side of the taskboard parallel to the robot´s base would lead to an angle of 0°. Angle is counted positive counter-clockwise.
 
 <div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/131485125/235300522-30daf56c-9985-4c78-ad17-7fd9d1f6a211.png" width="300" height="180")>
