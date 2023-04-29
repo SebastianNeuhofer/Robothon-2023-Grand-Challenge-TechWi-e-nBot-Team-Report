@@ -131,6 +131,8 @@ Second topic to consider is the range of motion of the ABB CRB 1100. In general 
   <img src="https://user-images.githubusercontent.com/131485125/235298764-fb47aa3f-06b9-4b0c-b5da-6b162d7c062c.png" width="300" height="180")>
 </div>
 
+Hence, opening the door and winding the wire would rule out each other. Therefore we created the tool "door-opener" which bypasses the problem of limited range.
+
 
 
 <h3>placing probe in temporarily clamp</h3>
