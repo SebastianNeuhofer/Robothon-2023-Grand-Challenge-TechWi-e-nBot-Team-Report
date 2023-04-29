@@ -175,6 +175,22 @@ To run the software solution, follow this sequence:
   <li>change robots settings to automatic mode in order to operate with full speed</li>
 </ul>
 
+<h2>New insights</h2>
+In general, participation in the robothon challenge was a great pleasure - although it was extremly time-consuming. To give a short conclusion, we want to list our most important new insights in the developing-process of new robotic-solutions:
+
+
+<ul>
+  <li>if the task seems to be impossible: be creative and create a tool to solve it</li>
+  <li>first things first: Set up the working station perfectly at the beginning, not in the end. (we had to learn it the hard way) </li>
+  <li>wires are hard to control and there behaviour is nearly unpredictable</li> 
+  <li>wire´s behaviour change tremendously after changing the velocity of the robot</li>
+  <li>clean up your working station before using the robot -> it will definitely reduce damages</li>
+  <li>treat any suggestion for a solution instead of ruling it out instantly </li>
+ 
+</ul>
+
+
+
 <h2>Authors</h2>
 (in alphabetical order)
 
