@@ -22,7 +22,7 @@ Our goal was to successfully complete all of the tasks with perfection. However,
 <div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/131485125/234349474-f773ca18-ef78-40f8-976f-d72834209baf.JPG" width="300" height="300"flex: 1;">
   <img src="https://user-images.githubusercontent.com/131485125/234816714-c291a85c-1240-44d8-a683-d1dffe322b09.JPG" width="350" height="300" alt="Image 2" style="flex: 1;">
-  <img src="https://user-images.githubusercontent.com/131485125/234817050-e7402eee-5f0f-4e81-a629-87531723a0b1.JPG" width="350" height="300" alt="Image 2" style="flex: 1;">
+  <img src="https://user-images.githubusercontent.com/131485125/234817050-e7402eee-5f0f-4e81-a629-87531723a0b1.JPG" width="350" height="300" alt="Image 3" style="flex: 1;">
 </div>
 
 
@@ -99,6 +99,52 @@ The created software solution is based on third parties software:
   <li>Cognex Vision framework </li> 
   <li>Arduino IDE + stepper.h library (stepper motor for turning table)</li>
 </ul>
+
+<h2>Constraints due to Setup</h2>
+Since we use only one robot to solve the task (asumption that turning table is not implemented to the solution yet), there are some constraints which have to be considered while placing the taskboard to a specific position/orientation 
+
+<h3>camera frame</h3>
+First of all, the area of positionining is contrainted by the field which is covered by the camera. Due to the chosen height of the camera and its technical properties, we are able to locate the taskboard in a area which looks like this:
+
+<div style="display: flex;">
+  <img src="https://user-images.githubusercontent.com/131485125/235298559-5d8cb600-b69f-45ec-a1b2-6e238f7cf07d.png" width="500" height="300")>
+</div>
+
+
+
+
+<h3>Range of robot</h3>
+Second topic to consider is the range of motion of the ABB CRB 1100. In general the range of the TCP0 (center of flange) is about 74cm. In addition, to solve the given tasks, the range of "free positioning decreases. In particular, the taskboard must be placed in an orientation, so that the "wind wire" area faces the robot´s base. With our tools and configuration, it is not possible to rotate the taskboard so that the winding area is orientated away from the base.
+
+
+<div style="display: flex;">
+  <img src="https://user-images.githubusercontent.com/131485125/235298559-5d8cb600-b69f-45ec-a1b2-6e238f7cf07d.png" width="300" height="180")>
+  <img src="https://user-images.githubusercontent.com/131485125/235298764-fb47aa3f-06b9-4b0c-b5da-6b162d7c062c.png" width="300" height="180")>
+</div>
+
+
+
+<h3>placing probe in temporarily clamp</h3>
+Due to the fact that we only use one robot, the combination of the winding task and the probe itself cause another constraint. After pluging the probe into the regular clamp, we can not plug it back to the white socket because it would interfere with the winding task. So we have to plug it to an temporarily clamp which allows us to taking it back from a determained position after the winding task. Since we must wind the wire 2 times to guarantee an "always-working solution", the rest of the wire becomes very short. That is the reason why we were forced to reduce the accepted orientation-angle to about -10° (left image) to 45° (right image). 
+
+<div style="display: flex;">
+  <img src="https://user-images.githubusercontent.com/131485125/235300522-30daf56c-9985-4c78-ad17-7fd9d1f6a211.png" width="300" height="180")>
+  <img src="https://user-images.githubusercontent.com/131485125/235300528-18988e84-845f-46c3-8d0a-768273d26c82.png" width="300" height="180")>
+</div>
+
+
+
+
+If we exceed the the angle in positiv direction, the winding task won`t work due to the limited range of motion of the robot. If we fall below the bottom limit, the wire will be too short and would tear the probe from the temporarily clamp
+
+<div style="display: flex;">
+  <img src="https://user-images.githubusercontent.com/131485125/235300593-be556ba0-e33a-40fe-b122-9ca1f2bf7369.png" width="300" height="180")>
+  <img src="https://user-images.githubusercontent.com/131485125/235300528-18988e84-845f-46c3-8d0a-768273d26c82.png" width="300" height="180")>
+</div>
+
+
+
+
 
 <h2>How to run</h2>How to run
 To run the software solution, follow this sequence:
