@@ -2,7 +2,8 @@
 To reduce the amount of constraints we have in our system, we decided to build a turntable on which we mount the taskboard. The turntable is driven by a stepper motor, with a spur gear mounted on it to transfer the torgue from the motor to the internal spur gear, which acts as the table-top where the taskboard is located.
                                                                                                                                        
 <div style="display: flex;">
-  <img src="https://user-images.githubusercontent.com/131485125/234816714-c291a85c-1240-44d8-a683-d1dffe322b09.JPG" width="350" height="300" alt="Image 2" style="flex: 1;">                                                                                                                   
+  <img src="https://user-images.githubusercontent.com/131485125/234816714-c291a85c-1240-44d8-a683-d1dffe322b09.JPG" width="350" height="300" alt="Image 2" style="flex: 1;"> 
+  <img src="https://user-images.githubusercontent.com/131485125/234817050-e7402eee-5f0f-4e81-a629-87531723a0b1.JPG" width="350" height="300" alt="Image 3" style="flex: 1;">
 </div> 
 <h3> Motor control </h3>                                                                                                                                              
 The turntable is programmed and wired to an arudino uno, to control the stepper motor we used the Stepper.h library, therefor we only need to provied an 
