@@ -18,7 +18,7 @@ The setup consists of
   <li>COGNEX 821-10160-1R camera</li>
   <li>(optional) turntable as additional axis (self-crafted)</li>
   
-  [turining-table](turningTable.md)
+  [turntable](turningTable.md)
   
   <li>additional tools in order to fullfill the tasks</li>
 </ul>
