@@ -150,6 +150,21 @@ If we fall below the bottom limit (left image), the wire will be too short and w
   <img src="https://user-images.githubusercontent.com/131485125/235300593-be556ba0-e33a-40fe-b122-9ca1f2bf7369.png" width="300" height="180")>
   <img src="https://user-images.githubusercontent.com/131485125/235301030-cbb0a773-c326-4454-a24d-6f992da2bf5b.png" width="350" height="180")>
 </div>
+                                                                                                                                            
+<h2>Turntable</h2>
+To reduce the amount of constraints we have in our system, we decided to build a turntable on which we mount the taskboard. The turntable is driven by a stepper motor, with a spur gear mounted on it to transfer the torgue from the motor to the internal spur gear, which acts as the table-top where the taskboard is located.
+                                                                                                                                       
+<div style="display: flex;">
+  <img src="https://user-images.githubusercontent.com/131485125/234816714-c291a85c-1240-44d8-a683-d1dffe322b09.JPG" width="350" height="300" alt="Image 2" style="flex: 1;">                                                                                                                   
+</div> 
+                                                                                                                                              
+The turntable is programmed and wired to an arudino uno, to control the stepper motor we used the Stepper.h library, therefor we only need to provied an angular value to start the turning process, this would mean that we would need a ethernet or TCP/IP connection from ABBs control unit to our arduino, but in the timespan of this project we werent able to achive such a connection and therefor had to circumvent that problem of sending and receiving data from and to the arduino. We resolved this problemby simply sending a digital output signal from the control unit, for a specified period of time, depending on the angular value we received form our camera. In the arduino program we could then create a while-loop, which is only active as long as we receive the signal from the controller, in which we send a turn-signal to the stepper motor. This way we were able to create a functioning turntable which can reposition us every run. In addition, we have decided to build brakes that engage with the internal spur gear with a rack when the table is stationary. This is because the motor we decided to use has a small holding-torque and could lead to the robot turning the whole mechanism at some tasks. These breaks are also controlled via the arduino.
+
+                                                                                                                                       
+<div style="display: flex;">
+ <img src = "https://user-images.githubusercontent.com/96821053/235343906-97bb3e26-f84d-4dc1-97f0-368276d82e4e.png" width="600" height = "360">                                                                                                                                           
+</div>                                                                                                                                            
+                                                                                                                                          
 
 <h2>New insights</h2>
 In general, participation in the robothon challenge was a great pleasure - although it was extremly time-consuming. To give a short conclusion, we want to list our most important new insights in the developing-process of new robotic-solutions:
@@ -158,8 +173,7 @@ In general, participation in the robothon challenge was a great pleasure - altho
 <ul>
   <li>if the task seems to be impossible: be creative and create a tool to solve it</li>
   <li>first things first: Set up the working station perfectly at the beginning, not in the end. (we had to learn it the hard way) </li>
-  <li>mount camera seperatly from the robot. If robot moves fast, the camera wiggles a bit</li>
-  <li>it is hard to maintain the light conditions in a room -> adaption of settings is needed regularly</li>
+   <li>mount camera seperatly from the robot. If robot moves fast, the camera wiggles a bit</li>
   <li>wires are hard to control and their behaviour is nearly unpredictable</li> 
   <li>wire´s behaviour change tremendously after changing the velocity of the robot</li>
   <li>clean up your working station before using the robot -> it will definitely reduce damages</li>
