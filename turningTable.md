@@ -21,8 +21,8 @@ a small holding-torque and could lead to the robot turning the whole mechanism a
  <img src = "https://user-images.githubusercontent.com/96821053/235343906-97bb3e26-f84d-4dc1-97f0-368276d82e4e.png" width="600" height = "360">                                                                                                                                           
 </div>     
 
-<h3>Integration of the turningtable to the system</h3>
-At time of submission the turningtable is not integrated to the system, because there are still some difficulties to cope with. The biggest problem is that the turningtable
+<h3>Integration of the turntable to the system</h3>
+At time of submission the turntable is not integrated to the system, because there are still some difficulties to cope with. The biggest problem is that the turntable
 is quite high, which increases the amount of configuration-errors of the robot. To solve this issue, we could embed it into the working table. Another aspect to consider is
 that the camera would need to be recalibrated to the new setting which would demand some more time.
 
