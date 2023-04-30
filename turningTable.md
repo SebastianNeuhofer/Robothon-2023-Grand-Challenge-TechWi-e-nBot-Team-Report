@@ -6,7 +6,7 @@ To reduce the amount of constraints we have in our system, we decided to build a
   <img src="https://user-images.githubusercontent.com/131485125/234817050-e7402eee-5f0f-4e81-a629-87531723a0b1.JPG" width="350" height="300" alt="Image 3" style="flex: 1;">
 </div> 
 <h3> Motor control </h3>                                                                                                                                              
-The turntable is programmed and wired to an arudino uno, to control the stepper motor we used the Stepper.h library, therefor we only need to provied an 
+The turntable is programmed and wired to an arudino uno, to control the stepper motor we used the Stepper.h library, therefore we only need to provied an 
 angular value to start the turning process, this would mean that we would need a ethernet or TCP/IP connection from ABBs control unit to our arduino, 
 but in the timespan of this project we were not able to achive such a connection and therefor had to circumvent that problem of sending and receiving data 
 from and to the arduino. We resolved this problemby simply sending a digital output signal from the control unit, for a specified period of time, depending 
