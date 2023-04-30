@@ -16,7 +16,10 @@ The setup consists of
   <li>ABB CRB 1100 + OmnicorC30 control unit </li>
   <li>Schunk parallel gripper (MPC 075) with 3d printed plates</li>
   <li>COGNEX 821-10160-1R camera</li>
-  <li>(optional) turning-table as additional axis (self-crafted)</li>
+  <li>(optional) turntable as additional axis (self-crafted)</li>
+  
+  [turining-table](turningTable.md)
+  
   <li>additional tools in order to fullfill the tasks</li>
 </ul>
 
@@ -25,7 +28,7 @@ Our goal was to successfully complete all of the tasks with perfection. However,
 
 [constraints](README.md#constraints-due-to-setup), or see below
 
-To overcome this limitation, we decided to create tools, such as a gear-spring mechanism to open the door, and an additional axis to rotate the whole taskboard to a suitable orientation. The additional axis is controlled by the robot control system and does not require any human interaction. While there are specific orientations of the taskboard in which the additional tools are not necessary, we wanted to ensure that our robot could adapt to any random orientation of the taskboard. However, at the time of submission the integration of the turningtable to the robot system does not work with a sufficient reliability. Thus, we did not use it in our final submission video. Nevertheless we made a great effort in the developing process, which is why we still want to present it in our report.
+To overcome this limitation, we decided to create tools, such as a gear-spring mechanism to open the door, and an additional axis to rotate the whole taskboard to a suitable orientation. The additional axis is controlled by the robot control system and does not require any human interaction. While there are specific orientations of the taskboard in which the additional tools are not necessary, we wanted to ensure that our robot could adapt to any random orientation of the taskboard. However, at the time of submission the integration of the turntable to the robot system does not work with a sufficient reliability. Thus, we did not use it in our final submission video. Nevertheless we made a great effort in the developing process, which is why we still want to present it in our report.
 
 <div style="display: flex;">
   <img src="https://user-images.githubusercontent.com/131485125/234349474-f773ca18-ef78-40f8-976f-d72834209baf.JPG" width="300" height="300"flex: 1;">
@@ -108,7 +111,7 @@ Since the orientation and position are already known by the system, the only imp
 
 
 <h2>Constraints due to Setup</h2>
-Since we use only one robot to solve the task (asumption that turning table is not implemented to the solution yet), there are some constraints which have to be considered while placing the taskboard to a specific position/orientation 
+Since we use only one robot to solve the task (asumption that turntable is not implemented to the solution yet), there are some constraints which have to be considered while placing the taskboard to a specific position/orientation 
 
 <h3>camera frame</h3>
 First of all, the area of positionining is constrainted by the field which is covered by the camera. Due to the chosen height of the camera and its technical properties, we are able to locate the taskboard in a area which looks like this:
@@ -215,7 +218,7 @@ The created software solution is based on third parties software:
 <ul>
   <li>ABB robot studio IDE, usage of software package Rapid</li>
   <li>Cognex Vision framework </li> 
-  <li>Arduino IDE + stepper.h library (stepper motor for turning table)</li>
+  <li>Arduino IDE + stepper.h library (stepper motor for turntable)</li>
 </ul>
 
 
