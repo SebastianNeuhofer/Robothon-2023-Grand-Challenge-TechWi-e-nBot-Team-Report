@@ -22,10 +22,8 @@ a small holding-torque and could lead to the robot turning the whole mechanism a
 </div>     
 
 <h3>Integration of the turntable to the system</h3>
-At time of submission the turntable is not integrated to the system, because there are still some difficulties to cope with. The biggest problem is that the turntable
-is quite high, which increases the amount of configuration-errors of the robot. To solve this issue, we could embed it into the working table. Another aspect to consider is
-that the camera would need to be recalibrated to the new setting which would demand some more time.
+At the time of submission, the turntable has not been integrated into the system due to some difficulties that need to be addressed. The main issue is that the turntable's height increases the likelihood of configuration errors for the robot. To resolve this, we suggest embedding the turntable into the working table. Another consideration is that the camera would need to be recalibrated for the new setting, which would require additional time.
 
-To sum it up: We proposed a simple 'one-axis-solution' to overcome the problems of orientation-constraints. It shows the redundancy of a second robot in a way cheaper solution.
+In summary, we have proposed a simple 'one-axis' solution to overcome the constraints of orientation. This approach demonstrates the redundancy of a second robot and provides a more cost-effective solution.
 
 
