@@ -158,7 +158,8 @@ In general, participation in the robothon challenge was a great pleasure - altho
 <ul>
   <li>if the task seems to be impossible: be creative and create a tool to solve it</li>
   <li>first things first: Set up the working station perfectly at the beginning, not in the end. (we had to learn it the hard way) </li>
-   <li>mount camera seperatly from the robot. If robot moves fast, the camera wiggles a bit</li>
+  <li>mount camera seperatly from the robot. If robot moves fast, the camera wiggles a bit</li>
+  <li>it is hard to maintain the light conditions in a room -> adaption of settings is needed regularly</li>
   <li>wires are hard to control and their behaviour is nearly unpredictable</li> 
   <li>wire´s behaviour change tremendously after changing the velocity of the robot</li>
   <li>clean up your working station before using the robot -> it will definitely reduce damages</li>
