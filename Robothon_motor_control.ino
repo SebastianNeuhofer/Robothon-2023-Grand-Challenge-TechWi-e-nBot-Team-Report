@@ -6,7 +6,7 @@
 AccelStepper stepper(AccelStepper::DRIVER, 5, 11);
 
 int pos = -10000; //10.000° um sicher zu stellen das der motor lang genug dreht
-int posmapped = 10*pos*1.275; //stepper dreht das ritzel, relevant ist jedoch die drehung vom Tisch (Übersetzungsverhältnis & umrechnung für die Library)
+int posmapped = 10*pos*2.65; //stepper dreht das ritzel, relevant ist jedoch die drehung vom Tisch (Übersetzungsverhältnis & umrechnung für die Library)
 unsigned long myTime;
 
 Servo servo;
